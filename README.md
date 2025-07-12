@@ -78,25 +78,21 @@ El objetivo final es proporcionar a la empresa una herramienta de análisis y un
 Basado en las métricas de la etapa anterior, el modelo Random Forest demostró el mejor rendimiento predictivo en los datos de prueba (mayor F1-Score y Recall), a pesar de mostrar signos de overfitting. La Regresión Logística y el SVM mostraron un rendimiento sólido y buena generalización. La Red Neuronal tuvo un desempeño intermedio.
 
 ### **Regresión Logística**
-*Archivo: Screenshot_8.png*
 ![Gráfico de Regresión Logística](./Screenshot_8.png)
 
 ---
 
 ### **Random Forest**
-*Archivo: Screenshot_9.png*
 ![Gráfico de Random Forest](./Screenshot_9.png)
 
 ---
 
 ### **Support Vector Machine (Lineal)**
-*Archivo: Screenshot_10.png*
 ![Gráfico de Support Vector Machine](./Screenshot_10.png)
 
 ---
 
 ### **Red Neuronal (Permutation Importance)**
-*Archivo: Screenshot_11.png*
 ![Gráfico de Red Neuronal](./Screenshot_11.png)
 
 ### **Interpretación de los Gráficos Resultantes**
@@ -154,7 +150,7 @@ El eje X en estos dos gráficos representa el poder predictivo general de cada v
 
 Basado en el análisis de los datos de **TelecomX_LATAM_2**, hemos identificado varias variables clave que influyen significativamente en la tasa de cancelación de clientes (churn). A continuación, se presenta un informe detallado basado en los hallazgos de los modelos y análisis visuales.
 
-### 🔍 **Resultados y Visualizaciones Clave**
+### **Resultados y Visualizaciones Clave**
 
 #### 1. Análisis Exploratorio
 
