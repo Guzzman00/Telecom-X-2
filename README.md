@@ -162,13 +162,7 @@ Basado en el análisis de los datos de **TelecomX_LATAM_2**, hemos identificado 
 
 #### 2. Resultados de los Modelos (Matrices de Confusión)
 
-![Resultados Regresión Logística](./Screenshot_3.png)
-
-![Resultados Random Forest](./Screenshot_4.png)
-
-![Resultados SVM](./Screenshot_5.png)
-
-![Resultados Red Neuronal](./Screenshot_6.png)
+![Resultados de los Modelos (Matrices de Confusión)](./Screenshot_3.png)
 
 ---
 
