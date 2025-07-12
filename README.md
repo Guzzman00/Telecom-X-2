@@ -108,7 +108,7 @@ El objetivo final es proporcionar a la empresa una herramienta de análisis y un
 
 ### 🎨 **Vista Previa**
 
-###**Breve resumen de los hallazgos de la evaluación y Código para el Análisis de Importancia de Variables**
+### **Breve resumen de los hallazgos de la evaluación y Código para el Análisis de Importancia de Variables**
 
 Basado en las métricas de la etapa anterior, el modelo Random Forest demostró el mejor rendimiento predictivo en los datos de prueba (mayor F1-Score y Recall), a pesar de mostrar signos de overfitting. La Regresión Logística y el SVM mostraron un rendimiento sólido y buena generalización. La Red Neuronal tuvo un desempeño intermedio.
 
@@ -134,11 +134,11 @@ Basado en las métricas de la etapa anterior, el modelo Random Forest demostró 
 *Archivo: Screenshot_11.png*
 ![Gráfico de Red Neuronal](./Screenshot_11.png)
 
-###**Interpretación de los Gráficos Resultantes**
+### **Interpretación de los Gráficos Resultantes**
 
 Al ejecutar este código, obtendrás cuatro gráficos. Esto es lo que debes observar:
 
-####**Regresión Logística y SVM Lineal:**
+#### **Regresión Logística y SVM Lineal:**
 
 Estos modelos son lineales, lo que permite una interpretación directa de los coeficientes de cada variable.
 
@@ -146,7 +146,7 @@ Estos modelos son lineales, lo que permite una interpretación directa de los co
 
 -  Barras a la izquierda (negativas): Son las variables que más disminuyen la probabilidad de cancelación (es decir, que fomentan la retención). Como era de esperar, la antigüedad (tenure) y los contratos a largo plazo (1 o 2 años) son los factores de retención más importantes.
 
-####**Explicación del Eje X (Valor del Coeficiente)**
+#### **Explicación del Eje X (Valor del Coeficiente)**
 
 El eje X en estos dos gráficos representa el valor del coeficiente que el modelo le asigna a cada variable. Este valor nos dice dos cosas:
 
@@ -160,7 +160,7 @@ El eje X en estos dos gráficos representa el valor del coeficiente que el model
 
 -  El tamaño de la barra (o el valor absoluto del coeficiente) indica qué tan fuerte es ese impacto. Una barra larga (ya sea positiva o negativa) representa una variable que tiene una gran influencia en la predicción del modelo.
 
-####**Random Forest y Red Neuronal (Permutation Importance):**
+#### **Random Forest y Red Neuronal (Permutation Importance):**
 
 Estos modelos son más complejos y no tienen coeficientes directos, por lo que su importancia se mide de otra forma.
 
@@ -168,7 +168,7 @@ Estos modelos son más complejos y no tienen coeficientes directos, por lo que s
 
 -  Los resultados muestran que las variables más largas coinciden en gran medida con los extremos de los gráficos anteriores. Variables como la antigüedad, los cargos mensuales y el tipo de contrato son consistentemente las más destacadas, confirmando su alta relevancia.
 
-####**Explicación del Eje X (Nivel de Importancia)**
+#### **Explicación del Eje X (Nivel de Importancia)**
 
 El eje X en estos dos gráficos representa el poder predictivo general de cada variable. A diferencia de los coeficientes, estos valores siempre son positivos y se interpretan así:
 
