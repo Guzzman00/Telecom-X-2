@@ -1,3 +1,5 @@
+# README
+
 # 📊 Proyecto de Análisis y Predicción de Evasión de Clientes (Churn) | Telecom X
 
 Un proyecto integral de ciencia de datos que abarca desde el análisis exploratorio (EDA) hasta el entrenamiento y evaluación de modelos de Machine Learning para predecir la evasión de clientes en una empresa de telecomunicaciones.
@@ -85,14 +87,6 @@ El objetivo final es proporcionar a la empresa una herramienta de análisis y un
 
 **Comparación de Exactitud (Entrenamiento vs. Prueba)**
 ![Comparación de Exactitud Entrenamiento vs. Prueba](./Screenshot_7.png)
-
-**Importancia de Variables: Regresión Logística vs. Random Forest**
-![Gráfico de Regresión Logística](./Screenshot_8.png)
-![Gráfico de Random Forest](./Screenshot_9.png)
-
-**Importancia de Variables: SVM vs. Red Neuronal**
-![Gráfico de Support Vector Machine](./Screenshot_10.png)
-![Gráfico de Red Neuronal](./Screenshot_11.png)
 
 ---
 
@@ -194,47 +188,6 @@ El eje X en estos dos gráficos representa el poder predictivo general de cada v
 ## Informe Detallado de Factores de Cancelación
 
 Basado en el análisis de los datos de **TelecomX_LATAM_2**, hemos identificado varias variables clave que influyen significativamente en la tasa de cancelación de clientes (churn). A continuación, se presenta un informe detallado basado en los hallazgos de los modelos y análisis visuales.
-
-## 1. Análisis Exploratorio de Datos (EDA)
-
-### Correlación de Variables con la Evasión
-*Archivo: Screenshot_1.png*
-![Gráfico de Correlación de Variables](./Screenshot_1.png)
-
-### Distribución de Variables Numéricas por Estado de Evasión
-*Archivo: Screenshot_2.png*
-![Boxplots de Variables Numéricas](./Screenshot_2.png)
-
----
-
-## 2. Resultados y Métricas de los Modelos
-
-A continuación se muestran las métricas de evaluación y la matriz de confusión para cada uno de los modelos entrenados.
-
-### Regresión Logística
-*Archivo: Screenshot_3.png*
-![Resultados Regresión Logística](./Screenshot_3.png)
-
-### Random Forest
-*Archivo: Screenshot_4.png*
-![Resultados Random Forest](./Screenshot_4.png)
-
-### Support Vector Machine (SVM)
-*Archivo: Screenshot_5.png*
-![Resultados SVM](./Screenshot_5.png)
-
-### Red Neuronal (MLP)
-*Archivo: Screenshot_6.png*
-![Resultados Red Neuronal](./Screenshot_6.png)
-
----
-
-## 3. Comparación Final de Exactitud
-
-Para evaluar el sobreajuste (overfitting), se comparó la exactitud de cada modelo en los datos de entrenamiento y de prueba.
-
-*Archivo: Screenshot_7.png*
-![Comparación de Exactitud Entrenamiento vs. Prueba](./imagenes/Screenshot_7.png)
 
 ### 1. Variables Categóricas
 
