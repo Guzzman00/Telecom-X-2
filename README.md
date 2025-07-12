@@ -1,34 +1,150 @@
-####**Breve resumen de los hallazgos de la evaluación y Código para el Análisis de Importancia de Variables**
+# 📊 Proyecto de Análisis y Predicción de Evasión de Clientes (Churn) | Telecom X
+
+Un proyecto integral de ciencia de datos que abarca desde el análisis exploratorio (EDA) hasta el entrenamiento y evaluación de modelos de Machine Learning para predecir la evasión de clientes en una empresa de telecomunicaciones.
+
+---
+
+### 👥 **Autor**
+
+-   **Nombre:** Felipe Guillermo Guzmán De La Fuente
+-   **Mail:** guzzman00@hotmail.com
+-   **GitHub:** [Guzzman00](https://github.com/Guzzman00)
+
+---
+
+### 📋 **Descripción del Proyecto**
+
+Este proyecto, contenido en el notebook `TelecomX_LATAM_2.ipynb`, aborda el problema de la evasión de clientes (churn) desde dos frentes:
+
+1.  **Análisis Exploratorio de Datos (EDA):** Se realiza un análisis detallado de datos de clientes para extraer insights sobre el perfil demográfico y de consumo de los clientes que cancelan el servicio, la influencia del tipo de contrato, los métodos de pago y el impacto de los servicios adicionales.
+2.  **Modelado Predictivo (Machine Learning):** Se entrenan, evalúan y comparan cuatro modelos de clasificación (Regresión Logística, Random Forest, SVM y Red Neuronal) para predecir con precisión qué clientes tienen una alta probabilidad de abandonar la empresa.
+
+El objetivo final es proporcionar a la empresa una herramienta de análisis y un modelo predictivo que permitan diseñar estrategias de retención efectivas y basadas en datos.
+
+---
+
+### ⚙️ **Análisis y Modelado Realizado**
+
+-   **Carga y Limpieza:** Extracción de datos desde una API en formato JSON, manejo de inconsistencias y valores nulos.
+-   **Ingeniería de Características:** Creación de nuevas variables (`Costo_Diario`), estandarización de variables categóricas (`Churn` a formato binario).
+-   **Análisis Exploratorio (EDA):**
+    -   Análisis descriptivo y de distribución de variables.
+    -   Visualización de la tasa de evasión por grupos (género, tipo de contrato, método de pago).
+    -   Análisis de correlación entre variables numéricas.
+-   **Preprocesamiento para ML:**
+    -   Codificación de variables categóricas mediante One-Hot Encoding.
+    -   División de datos en conjuntos de entrenamiento y prueba.
+-   **Entrenamiento y Evaluación de Modelos:**
+    -   Implementación de Regresión Logística, Random Forest, SVM y Red Neuronal (MLP).
+    -   Evaluación de rendimiento con métricas como `Accuracy`, `Precision`, `Recall` y `F1-Score`.
+    -   Generación y análisis de Matrices de Confusión.
+-   **Análisis de Importancia de Variables:** Identificación de los factores más influyentes en la predicción de cada modelo.
+
+---
+
+### 🛠️ **Tecnologías Utilizadas**
+
+-   **Lenguaje:** Python 3
+-   **Bibliotecas Principales:**
+    -   `Pandas`: Manipulación y análisis de datos.
+    -   `Matplotlib` & `Seaborn`: Visualización de datos.
+    -   `Scikit-learn`: Implementación de modelos de Machine Learning y preprocesamiento.
+-   **Entorno:** Google Colab / Jupyter Notebook
+
+---
+
+### 🔍 **Resultados y Visualizaciones Clave**
+
+#### 1. Análisis Exploratorio
+
+**Correlación de Variables con la Evasión**
+![Gráfico de Correlación de Variables](./Screenshot_1.png)
+
+**Distribución de Variables Numéricas por Estado de Evasión**
+![Boxplots de Variables Numéricas](./Screenshot_2.png)
+
+---
+
+#### 2. Resultados de los Modelos (Matrices de Confusión)
+
+**Regresión Logística**
+![Resultados Regresión Logística](./Screenshot_3.png)
+
+**Random Forest**
+![Resultados Random Forest](./Screenshot_4.png)
+
+**Support Vector Machine (SVM)**
+![Resultados SVM](./Screenshot_5.png)
+
+**Red Neuronal (MLP)**
+![Resultados Red Neuronal](./Screenshot_6.png)
+
+---
+
+#### 3. Comparación de Rendimiento y Análisis de Variables
+
+**Comparación de Exactitud (Entrenamiento vs. Prueba)**
+![Comparación de Exactitud Entrenamiento vs. Prueba](./Screenshot_7.png)
+
+**Importancia de Variables: Regresión Logística vs. Random Forest**
+![Gráfico de Regresión Logística](./Screenshot_8.png)
+![Gráfico de Random Forest](./Screenshot_9.png)
+
+**Importancia de Variables: SVM vs. Red Neuronal**
+![Gráfico de Support Vector Machine](./Screenshot_10.png)
+![Gráfico de Red Neuronal](./Screenshot_11.png)
+
+---
+
+### 📦 **Guía de Ejecución**
+
+1.  **Entorno:** Este notebook está diseñado para ejecutarse preferiblemente en **Google Colab**.
+2.  **Librerías:** Todas las librerías necesarias (`pandas`, `matplotlib`, `seaborn`, `sklearn`) suelen estar preinstaladas en Google Colab.
+3.  **Abrir Notebook:** Sube o abre el archivo `TelecomX_LATAM_2.ipynb` en tu entorno de Google Colab.
+4.  **Ejecutar Celdas:** Ejecuta todas las celdas en orden secuencial (de arriba hacia abajo). Es crucial ejecutar las secciones de **Extracción, Limpieza y Preprocesamiento** antes de las secciones de **Análisis y Modelado** para asegurar que los DataFrames estén correctamente definidos.
+
+---
+
+### 💻 **Cómo Utilizar**
+
+-   Ejecuta el notebook celda por celda para replicar el análisis y el entrenamiento de los modelos.
+-   Observa los gráficos y las tablas de métricas para comprender los factores que impulsan la evasión y el rendimiento de cada modelo.
+-   Presta especial atención a las secciones de **Análisis de Importancia de Variables** y al **Informe Final** para entender las conclusiones y recomendaciones estratégicas.
+-   ¡Siéntete libre de experimentar! Puedes modificar los hiperparámetros de los modelos o probar diferentes visualizaciones para profundizar aún más en el análisis.
+
+### 🎨 **Vista Previa**
+
+###**Breve resumen de los hallazgos de la evaluación y Código para el Análisis de Importancia de Variables**
 
 Basado en las métricas de la etapa anterior, el modelo Random Forest demostró el mejor rendimiento predictivo en los datos de prueba (mayor F1-Score y Recall), a pesar de mostrar signos de overfitting. La Regresión Logística y el SVM mostraron un rendimiento sólido y buena generalización. La Red Neuronal tuvo un desempeño intermedio.
 
-#### **Regresión Logística**
+### **Regresión Logística**
 *Archivo: Screenshot_8.png*
-![Gráfico de Regresión Logística](./imagenes/Screenshot_8.png)
+![Gráfico de Regresión Logística](./Screenshot_8.png)
 
 ---
 
-#### **Random Forest**
+### **Random Forest**
 *Archivo: Screenshot_9.png*
-![Gráfico de Random Forest](./imagenes/Screenshot_9.png)
+![Gráfico de Random Forest](./Screenshot_9.png)
 
 ---
 
-#### **Support Vector Machine (Lineal)**
+### **Support Vector Machine (Lineal)**
 *Archivo: Screenshot_10.png*
-![Gráfico de Support Vector Machine](./imagenes/Screenshot_10.png)
+![Gráfico de Support Vector Machine](./Screenshot_10.png)
 
 ---
 
-#### **Red Neuronal (Permutation Importance)**
+### **Red Neuronal (Permutation Importance)**
 *Archivo: Screenshot_11.png*
-![Gráfico de Red Neuronal](./imagenes/Screenshot_11.png)
+![Gráfico de Red Neuronal](./Screenshot_11.png)
 
-####**Interpretación de los Gráficos Resultantes**
+###**Interpretación de los Gráficos Resultantes**
 
 Al ejecutar este código, obtendrás cuatro gráficos. Esto es lo que debes observar:
 
-#####**Regresión Logística y SVM Lineal:**
+####**Regresión Logística y SVM Lineal:**
 
 Estos modelos son lineales, lo que permite una interpretación directa de los coeficientes de cada variable.
 
@@ -36,7 +152,7 @@ Estos modelos son lineales, lo que permite una interpretación directa de los co
 
 -  Barras a la izquierda (negativas): Son las variables que más disminuyen la probabilidad de cancelación (es decir, que fomentan la retención). Como era de esperar, la antigüedad (tenure) y los contratos a largo plazo (1 o 2 años) son los factores de retención más importantes.
 
-#####**Explicación del Eje X (Valor del Coeficiente)**
+####**Explicación del Eje X (Valor del Coeficiente)**
 
 El eje X en estos dos gráficos representa el valor del coeficiente que el modelo le asigna a cada variable. Este valor nos dice dos cosas:
 
@@ -50,7 +166,7 @@ El eje X en estos dos gráficos representa el valor del coeficiente que el model
 
 -  El tamaño de la barra (o el valor absoluto del coeficiente) indica qué tan fuerte es ese impacto. Una barra larga (ya sea positiva o negativa) representa una variable que tiene una gran influencia en la predicción del modelo.
 
-#####**Random Forest y Red Neuronal (Permutation Importance):**
+####**Random Forest y Red Neuronal (Permutation Importance):**
 
 Estos modelos son más complejos y no tienen coeficientes directos, por lo que su importancia se mide de otra forma.
 
@@ -58,7 +174,7 @@ Estos modelos son más complejos y no tienen coeficientes directos, por lo que s
 
 -  Los resultados muestran que las variables más largas coinciden en gran medida con los extremos de los gráficos anteriores. Variables como la antigüedad, los cargos mensuales y el tipo de contrato son consistentemente las más destacadas, confirmando su alta relevancia.
 
-#####**Explicación del Eje X (Nivel de Importancia)**
+####**Explicación del Eje X (Nivel de Importancia)**
 
 El eje X en estos dos gráficos representa el poder predictivo general de cada variable. A diferencia de los coeficientes, estos valores siempre son positivos y se interpretan así:
 
@@ -83,11 +199,11 @@ Basado en el análisis de los datos de **TelecomX_LATAM_2**, hemos identificado 
 
 ### Correlación de Variables con la Evasión
 *Archivo: Screenshot_1.png*
-![Gráfico de Correlación de Variables](./imagenes/Screenshot_1.png)
+![Gráfico de Correlación de Variables](./Screenshot_1.png)
 
 ### Distribución de Variables Numéricas por Estado de Evasión
 *Archivo: Screenshot_2.png*
-![Boxplots de Variables Numéricas](./imagenes/Screenshot_2.png)
+![Boxplots de Variables Numéricas](./Screenshot_2.png)
 
 ---
 
@@ -97,19 +213,19 @@ A continuación se muestran las métricas de evaluación y la matriz de confusi�
 
 ### Regresión Logística
 *Archivo: Screenshot_3.png*
-![Resultados Regresión Logística](./imagenes/Screenshot_3.png)
+![Resultados Regresión Logística](./Screenshot_3.png)
 
 ### Random Forest
 *Archivo: Screenshot_4.png*
-![Resultados Random Forest](./imagenes/Screenshot_4.png)
+![Resultados Random Forest](./Screenshot_4.png)
 
 ### Support Vector Machine (SVM)
 *Archivo: Screenshot_5.png*
-![Resultados SVM](./imagenes/Screenshot_5.png)
+![Resultados SVM](./Screenshot_5.png)
 
 ### Red Neuronal (MLP)
 *Archivo: Screenshot_6.png*
-![Resultados Red Neuronal](./imagenes/Screenshot_6.png)
+![Resultados Red Neuronal](./Screenshot_6.png)
 
 ---
 
