@@ -55,41 +55,6 @@ El objetivo final es proporcionar a la empresa una herramienta de análisis y un
 
 ---
 
-### 🔍 **Resultados y Visualizaciones Clave**
-
-#### 1. Análisis Exploratorio
-
-**Correlación de Variables con la Evasión**
-![Gráfico de Correlación de Variables](./Screenshot_1.png)
-
-**Distribución de Variables Numéricas por Estado de Evasión**
-![Boxplots de Variables Numéricas](./Screenshot_2.png)
-
----
-
-#### 2. Resultados de los Modelos (Matrices de Confusión)
-
-**Regresión Logística**
-![Resultados Regresión Logística](./Screenshot_3.png)
-
-**Random Forest**
-![Resultados Random Forest](./Screenshot_4.png)
-
-**Support Vector Machine (SVM)**
-![Resultados SVM](./Screenshot_5.png)
-
-**Red Neuronal (MLP)**
-![Resultados Red Neuronal](./Screenshot_6.png)
-
----
-
-#### 3. Comparación de Rendimiento y Análisis de Variables
-
-**Comparación de Exactitud (Entrenamiento vs. Prueba)**
-![Comparación de Exactitud Entrenamiento vs. Prueba](./Screenshot_7.png)
-
----
-
 ### 📦 **Guía de Ejecución**
 
 1.  **Entorno:** Este notebook está diseñado para ejecutarse preferiblemente en **Google Colab**.
@@ -188,6 +153,32 @@ El eje X en estos dos gráficos representa el poder predictivo general de cada v
 ## Informe Detallado de Factores de Cancelación
 
 Basado en el análisis de los datos de **TelecomX_LATAM_2**, hemos identificado varias variables clave que influyen significativamente en la tasa de cancelación de clientes (churn). A continuación, se presenta un informe detallado basado en los hallazgos de los modelos y análisis visuales.
+
+### 🔍 **Resultados y Visualizaciones Clave**
+
+#### 1. Análisis Exploratorio
+
+![Gráfico de Correlación de Variables](./Screenshot_1.png)
+
+![Boxplots de Variables Numéricas](./Screenshot_2.png)
+
+---
+
+#### 2. Resultados de los Modelos (Matrices de Confusión)
+
+![Resultados Regresión Logística](./Screenshot_3.png)
+
+![Resultados Random Forest](./Screenshot_4.png)
+
+![Resultados SVM](./Screenshot_5.png)
+
+![Resultados Red Neuronal](./Screenshot_6.png)
+
+---
+
+#### 3. Comparación de Rendimiento y Análisis de Variables
+
+![Comparación de Exactitud Entrenamiento vs. Prueba](./Screenshot_7.png)
 
 ### 1. Variables Categóricas
 
